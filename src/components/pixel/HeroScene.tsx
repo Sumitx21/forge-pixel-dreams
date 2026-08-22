@@ -78,11 +78,6 @@ export function HeroScene({ interactive = true }: { interactive?: boolean }) {
         <polygon points="250,90 300,32 320,90" fill="oklch(0.26 0.07 292)" />
       </svg>
 
-      {/* lake */}
-      <div className="hs-water" style={{ transform: "translateY(calc(var(--par) * 0.42px))" }}>
-        <div className="hs-water-shimmer" />
-      </div>
-
       {/* near hills + treeline */}
       <svg
         className="hs-mountains hs-hills"
@@ -96,6 +91,11 @@ export function HeroScene({ interactive = true }: { interactive?: boolean }) {
         <polygon points="100,70 190,18 280,70" fill="oklch(0.21 0.06 195)" />
         <polygon points="240,70 320,30 320,70" fill="oklch(0.23 0.06 200)" />
       </svg>
+
+      {/* lake */}
+      <div className="hs-water" style={{ transform: "translateY(calc(var(--par) * 0.42px))" }}>
+        <div className="hs-water-shimmer" />
+      </div>
 
       <Fireflies count={20} className="hs-flies" />
 
